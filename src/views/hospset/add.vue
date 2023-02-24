@@ -73,7 +73,7 @@ export default {
               this.$message({
                 type: 'info',
                 message: '添加失败'
-              }); 
+              })
           }) 
     },
 
