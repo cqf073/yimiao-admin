@@ -62,7 +62,14 @@ export const constantRouterMap = [
         component: () =>import('@/views/hospset/add'),
         meta: { title: '编辑', noCache: true },
         hidden: true
-        }  
+        } ,
+        {
+          path: 'hosp/list',
+          name: '社区列表',
+          component: () => import('@/views/hosp/list'),
+          meta: { title: '社区列表', icon: 'table' }
+        },
+
     ]
   },
 
