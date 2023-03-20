@@ -23,12 +23,44 @@ export default{
         url: `/admin/cmn/dict/findChildData/${dictCode}`,
         method: 'get'
       })
-  }
+  },
+  // 更新医院信息
+  updataHospitalStatus(id,status){
+    return request({
+      url: `/admin/hosp/hospital/updataHospitalStatus/${id}/${status}`,
+      method: 'get'
+    })
+  },
+  // 查看医院的详情
+  getHospitalDetialById(id){
+    return request({
+      url: `/admin/hosp/hospital/showHospitalDetial/${id}`,
+      method: 'get'
+    })
+  },
+  // 查看医院的种类
+  getDeptByHospCode(hoscode){
+  return request({
+    url: `/admin/hosp/department/getDeptList/${hoscode}`,
+    method: 'get'
+  })
+},
 
+   // 查询预约规则
+   getScheduleRule(page,limit,hoscode,depcode){
+    return request({
+      url: `/admin/hosp/schedule/getScheduleRule/${page}/${limit}/${hoscode}/${depcode}`,
+      method: 'get'
+    })
+  },
 
- 
-
-
+   // 查询预约详情
+   getScheduledetial(hoscode,depcode,workDate){
+    return request({
+      url: `/admin/hosp/schedule/getscheduleDetial/${hoscode}/${depcode}/${workDate}`,
+      method: 'get'
+    })
+  },
 
 
 
