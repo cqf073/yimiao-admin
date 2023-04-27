@@ -4,15 +4,16 @@
     <table class="table table-striped table-condenseda table-bordered" width="100%">
         <tbody>
             <tr>
-                <th width="15%">医院名称</th>
-                <td width="35%"><b style="font-size: 14px">{{ hospital.hosname }}</b> | {{ hospital.param.hostypeString }}</td>
-                <th width="15%">医院logo</th>
+                <th width="15%">社区名称</th>
+                <!-- <td width="35%"><b style="font-size: 14px">{{ hospital.hosname }}</b> | {{ hospital.param.hostypeString }}</td> -->
+                 <td width="35%"><b style="font-size: 14px">{{ hospital.hosname }}</b></td>
+                <th width="15%">社区logo</th>
                 <td width="35%">
                     <img :src="'data:image/jpeg;base64,'+hospital.logoData" width="80">
                 </td>
             </tr>
             <tr>
-                <th>医院编码</th>
+                <th>社区编码</th>
                 <td>{{ hospital.hoscode }}</td>
                 <th>地址</th>
                 <td>{{ hospital.param.fullAddress }}</td>
@@ -22,7 +23,7 @@
                 <td colspan="3">{{ hospital.route }}</td>
             </tr>
             <tr>
-                <th>医院简介</th>
+                <th>社区简介</th>
                 <td colspan="3">{{ hospital.intro }}</td>
             </tr>
         </tbody>

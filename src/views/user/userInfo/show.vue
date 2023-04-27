@@ -34,7 +34,7 @@
             </tr>
             </tbody>
         </table>
-    <h4>就诊人信息</h4>
+    <h4>预约人信息</h4>
     <el-table
         v-loading="listLoading"
         :data="patientList"
@@ -81,7 +81,7 @@ export default {
         return {
             id: this.$route.params.id,
             userInfo: {}, // 会员信息
-            patientList: [] // 就诊人列表
+            patientList: [] // 预约人列表
         }
     },
     // 当页面加载时获取数据

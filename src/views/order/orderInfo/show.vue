@@ -6,13 +6,13 @@
       <tr>
         <th width="15%">订单交易号</th>
         <td width="35%"><b style="font-size: 14px">{{ orderInfo.outTradeNo }}</b> </td>
-        <th width="15%">医院名称</th>
+        <th width="15%">社区名称</th>
         <td width="35%">{{ orderInfo.hosname }}</td>
       </tr>
       <tr>
-        <th>科室名称</th>
+        <th>疫苗名称</th>
         <td>{{ orderInfo.depname }}</td>
-        <th>医生职称</th>
+        <th>付费性质</th>
         <td>{{ orderInfo.title }}</td>
       </tr>
       <tr>
@@ -22,7 +22,7 @@
         <td>{{ orderInfo.number }}</td>
       </tr>
       <tr>
-        <th>医事服务费</th>
+        <th>费用</th>
         <td>{{ orderInfo.amount }}</td>
         <th>建议取号时间</th>
         <td>{{ orderInfo.fetchTime }}</td>
@@ -41,7 +41,7 @@
       </tr>
       </tbody>
     </table>
-    <h4>就诊人信息</h4>
+    <h4>预约人信息</h4>
     <table class="table table-striped table-condenseda table-bordered" width="100%">
       <tbody>
       <tr>
@@ -68,7 +68,7 @@
         <th>地址</th>
         <td>{{ patient.param.fullAddress }}</td>
       </tr>
-      <tr>
+      <!-- <tr>
         <th>联系人姓名</th>
         <td>{{ patient.contactsName }}</td>
         <th>联系人证件类型</th>
@@ -79,7 +79,7 @@
         <td>{{ orderInfo.contactsCertificatesNo }}</td>
         <th>联系人手机</th>
         <td>{{ orderInfo.contactsPhone }}</td>
-      </tr>
+      </tr> -->
       <br>
       <el-row>
         <el-button @click="back">返回</el-button>

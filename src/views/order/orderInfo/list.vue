@@ -8,7 +8,7 @@
         <el-input v-model="searchObj.outTradeNo" placeholder="订单号"/>
       </el-form-item>
       <el-form-item>
-        <el-input v-model="searchObj.patientName" placeholder="就诊人名称"/>
+        <el-input v-model="searchObj.patientName" placeholder="预约人名称"/>
       </el-form-item>
       <el-form-item>
         <el-date-picker
@@ -60,15 +60,15 @@
         </template>
       </el-table-column>
       <el-table-column prop="outTradeNo" label="订单交易号" width="160"/>
-      <el-table-column prop="hosname" label="医院名称" width="160"/>
-      <el-table-column prop="depname" label="科室名称" width="160"/>
-      <el-table-column prop="title" label="医生职称" />
+      <el-table-column prop="hosname" label="社区名称" width="160"/>
+      <el-table-column prop="depname" label="疫苗名称" width="160"/>
+      <el-table-column prop="title" label="收费性质" />
       <el-table-column label="安排时间" width="130">
         <template slot-scope="scope">
           {{ scope.row.reserveDate }} {{ scope.row.reserveTime === 0 ? '上午' : '下午' }}
         </template>
       </el-table-column>
-      <el-table-column prop="patientName" label="就诊人" />
+      <el-table-column prop="patientName" label="预约人" />
       <el-table-column prop="number" label="预约号序" width="80"/>
       <el-table-column prop="amount" label="服务费" width="70"/>
       <el-table-column prop="param.orderStatusString" label="订单状态" />

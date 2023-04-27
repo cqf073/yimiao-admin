@@ -50,14 +50,14 @@
         </template>
     </el-table-column>
 
-    <el-table-column label="医院logo">
+    <el-table-column label="社区logo">
         <template slot-scope="scope">
         <img :src="'data:image/jpeg;base64,'+scope.row.logoData" width="80">
         </template>
     </el-table-column>
 
-    <el-table-column prop="hosname" label="医院名称"/>
-    <el-table-column prop="param.hostypeString" label="等级" width="90"/>
+    <el-table-column prop="hosname" label="社区名称"/>
+    <!-- <el-table-column prop="param.hostypeString" label="等级" width="90"/> -->
     <el-table-column prop="param.fullAddress" label="详情地址"/>
     <el-table-column label="状态" width="80">
         <template slot-scope="scope">

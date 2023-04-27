@@ -60,7 +60,7 @@
                         </el-table-column>
                         <el-table-column prop="reservedNumber" label="可预约数" width="80"/>
                         <el-table-column prop="availableNumber" label="剩余预约数" width="100"/>
-                        <el-table-column prop="amount" label="挂号费(元)" width="90"/>
+                        <el-table-column prop="amount" label="预约费(元)" width="90"/>
                         <el-table-column prop="skill" label="擅长技能"/>
                     </el-table>
                 </el-row>
